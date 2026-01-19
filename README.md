@@ -51,7 +51,7 @@ Get your own instance running in minutes!
 
 1.  **Clone the Repo**
     ```bash
-    git clone https://github.com/yourusername/twitter-clone.git
+    git clone https://github.com/Mohamed2007Sarhan/twitter.git
     ```
 
 2.  **Setup Database**
@@ -88,3 +88,4 @@ Contributions are what make the open source community such an amazing place to l
 <p align="center">
   Made with ❤️ for code.
 </p>
+
