@@ -39,28 +39,12 @@ if ( isset( $_POST['tweet'] ) ) {
 
 <head>
     <title>Home - Twitter</title>
-    <meta charset='UTF-8' />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/bird.svg">
-    <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'/>
-    
-    <link rel='stylesheet' href='assets/css/style-complete.css' />
-    <link rel='stylesheet' href='assets/css/style.css' />
-    <link rel='stylesheet' href='assets/css/font-awesome.css' />
-    <link rel='stylesheet' href='assets/css/bootstrap.css' />
-    <script src='assets/js/jquery-3.1.1.min.js'></script>
-
-    <script src = 'https://code.jquery.com/jquery-3.2.1.min.js'></script>
-
-
+    <?php include 'includes/head_section.php'; ?>
 </head>
 
 <body>
 
     <div class="grid-container">
-        <!--    <div class='wrapper'>-->
-
         <?php require 'left-sidebar.php' ?>
 
         <div class="main">
@@ -100,20 +84,13 @@ if ( isset( $_POST['tweet'] ) ) {
                                                 echo '<br>' . $imgError;
                                             }
                                             ?></span>
-                                            <!--<i class="fa fa-image"></i>-->
-
                                         </ul>
                                     </div>
                                     <div class='t-fo-right'>
-                                        <!--<span id='count'>140</span>-->
-                                        <!--<input type='submit' name='tweet' value='tweet' />-->
-
                                         <button class="button_tweet" type="submit" name="tweet" style="outline:none;">Tweet</button>
-
                                     </div>
                             </form>
                         </div>
-                        <!--</div>-->
                     </div>
                 </div>
                 <div class="space" style="height:10px; width:100%; background:rgba(230, 236, 240, 0.5);">
@@ -146,8 +123,6 @@ if ( isset( $_POST['tweet'] ) ) {
             </div><!-- in left wrap-->
         </div><!-- in center end -->
     </div>
-
-    
 
     <?php require 'right-sidebar.php' ?>
 
